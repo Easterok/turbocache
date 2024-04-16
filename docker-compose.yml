@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  turbocache:
+    container_name: turbocache
+    restart: always
+    build:
+      context: .
+      dockerfile: cmd/Dockerfile
+    ports:
+      - 8050:8001
+    env_file:
+      - .env
