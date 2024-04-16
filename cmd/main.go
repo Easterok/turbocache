@@ -299,9 +299,9 @@ func prepareInfo(meta, events string) Info {
 
 				founded = true
 			}
-
-			duration += event.Duration
 		}
+
+		duration += event.Duration
 
 		corrupted_data = !founded || corrupted_data
 	}
